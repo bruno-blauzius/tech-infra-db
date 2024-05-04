@@ -11,7 +11,11 @@ variable "REGION" {
   default = "us-east-1"
 }
 
-variable "CLUSTER_IDENTIFIER" {
+variable "RDS_CLUSTER_ENTREGA_IDENTIFIER" {
+  type = string
+}
+
+variable "RDS_CLUSTER_PEDIDO_IDENTIFIER" {
   type = string
 }
 
@@ -28,5 +32,18 @@ variable "DB_PASSWORD" {
 }
 
 variable "DB_PORT" {
+  type = string
+}
+
+variable "MONGODB_USER" {
+  type = string
+}
+
+variable "MONGO_PORT" {
+  type = string
+}
+
+
+variable "MONGODB_PASSWORD" {
   type = string
 }

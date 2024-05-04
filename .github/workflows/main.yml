@@ -92,6 +92,9 @@ jobs:
         export TF_VAR_DB_USERNAME=${{ vars.DB_USERNAME }}
         export TF_VAR_DB_PASSWORD=${{ secrets.CLUSTER_NAME }}
         export TF_VAR_DB_PORT=${{ vars.DB_PORT }}
+        export TF_VAR_MONGO_PORT = ${{ vars.MONGO_PORT }}
+        export TF_VAR_MONGODB_USER = ${{ vars.MONGODB_USER }}
+        export TF_VAR_MONGODB_PASSWORD = ${{ vars.MONGODB_PASSWORD }}
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
