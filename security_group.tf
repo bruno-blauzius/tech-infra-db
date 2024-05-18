@@ -10,13 +10,13 @@ resource "aws_security_group" "database" {
     description = "Mysql DB"
   }
 
-  ingress {
-    from_port   = var.MONGO_PORT
-    to_port     = var.MONGO_PORT
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # Permitindo acesso de qualquer IP, ajuste conforme necessário
-    description = "Mongo DB"
-  }
+  # ingress {
+  #   from_port   = var.MONGO_PORT
+  #   to_port     = var.MONGO_PORT
+  #   protocol    = "tcp"
+  #   cidr_blocks = ["0.0.0.0/0"] # Permitindo acesso de qualquer IP, ajuste conforme necessário
+  #   description = "Mongo DB"
+  # }
 
   egress {
     from_port   = 0
