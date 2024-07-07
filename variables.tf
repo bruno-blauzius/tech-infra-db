@@ -35,15 +35,14 @@ variable "DB_PORT" {
   type = string
 }
 
-# variable "MONGODB_USER" {
-#   type = string
-# }
+variable "MONGODB_USER" {
+  type = string
+}
 
 # variable "MONGO_PORT" {
 #   type = string
 # }
 
-
-# variable "MONGODB_PASSWORD" {
-#   type = string
-# }
+variable "MONGODB_PASSWORD" {
+  type = string
+}
